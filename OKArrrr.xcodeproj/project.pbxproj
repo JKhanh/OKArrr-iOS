@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1119ED3636B201F257273A8A /* Pods_OKArrrr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157540E27FEFD888C0201D1C /* Pods_OKArrrr.framework */; };
 		A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286ADE28B66F2900228526 /* OKArrrrApp.swift */; };
 		A7286AE128B66F2900228526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AE028B66F2900228526 /* ContentView.swift */; };
 		A7286AE328B66F2B00228526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7286AE228B66F2B00228526 /* Assets.xcassets */; };
@@ -14,6 +15,13 @@
 		A7286AF028B66F2B00228526 /* OKArrrrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AEF28B66F2B00228526 /* OKArrrrTests.swift */; };
 		A7286AFA28B66F2B00228526 /* OKArrrrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AF928B66F2B00228526 /* OKArrrrUITests.swift */; };
 		A7286AFC28B66F2B00228526 /* OKArrrrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AFB28B66F2B00228526 /* OKArrrrUITestsLaunchTests.swift */; };
+		A76E5D6F28B6739100AF82E2 /* OKR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D6E28B6739100AF82E2 /* OKR.swift */; };
+		A76E5D7328B674CE00AF82E2 /* OKRRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7228B674CE00AF82E2 /* OKRRow.swift */; };
+		A76E5D7528B67B1000AF82E2 /* OKRList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7428B67B1000AF82E2 /* OKRList.swift */; };
+		A76E5D7728B67D6D00AF82E2 /* OKRDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */; };
+		A76E5D7928B6818A00AF82E2 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */; };
+		C7785D826166153A62044488 /* Pods_OKArrrr_OKArrrrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */; };
+		CCE6F1E419C0173C517B7801 /* Pods_OKArrrrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		157540E27FEFD888C0201D1C /* Pods_OKArrrr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A6C0EF62EE3118E5E9D6D1 /* Pods-OKArrrr-OKArrrrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr-OKArrrrUITests.release.xcconfig"; path = "Target Support Files/Pods-OKArrrr-OKArrrrUITests/Pods-OKArrrr-OKArrrrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50DE01150AA67AB1F42A8FA7 /* Pods-OKArrrr-OKArrrrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr-OKArrrrUITests.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrr-OKArrrrUITests/Pods-OKArrrr-OKArrrrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C5362DC236D78A4B220148C /* Pods-OKArrrr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr.release.xcconfig"; path = "Target Support Files/Pods-OKArrrr/Pods-OKArrrr.release.xcconfig"; sourceTree = "<group>"; };
+		91103749CEBE92AE6D93C402 /* Pods-OKArrrr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrr/Pods-OKArrrr.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrr_OKArrrrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286ADB28B66F2900228526 /* OKArrrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKArrrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286ADE28B66F2900228526 /* OKArrrrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrApp.swift; sourceTree = "<group>"; };
 		A7286AE028B66F2900228526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +58,14 @@
 		A7286AF528B66F2B00228526 /* OKArrrrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OKArrrrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286AF928B66F2B00228526 /* OKArrrrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrUITests.swift; sourceTree = "<group>"; };
 		A7286AFB28B66F2B00228526 /* OKArrrrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A76E5D6E28B6739100AF82E2 /* OKR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKR.swift; sourceTree = "<group>"; };
+		A76E5D7228B674CE00AF82E2 /* OKRRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRRow.swift; sourceTree = "<group>"; };
+		A76E5D7428B67B1000AF82E2 /* OKRList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRList.swift; sourceTree = "<group>"; };
+		A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRDetail.swift; sourceTree = "<group>"; };
+		A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC054ABA2190EAB9456142C /* Pods-OKArrrrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E28BF18CB7018D2BB73A1A19 /* Pods-OKArrrrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.release.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1119ED3636B201F257273A8A /* Pods_OKArrrr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE6F1E419C0173C517B7801 /* Pods_OKArrrrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7785D826166153A62044488 /* Pods_OKArrrr_OKArrrrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,8 @@
 				A7286AEE28B66F2B00228526 /* OKArrrrTests */,
 				A7286AF828B66F2B00228526 /* OKArrrrUITests */,
 				A7286ADC28B66F2900228526 /* Products */,
+				EE7C62A8F0CB83395F7F7B5D /* Pods */,
+				ECDBAD97FEBECCBCA912907B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +121,15 @@
 		A7286ADD28B66F2900228526 /* OKArrrr */ = {
 			isa = PBXGroup;
 			children = (
+				A76E5D6D28B6737B00AF82E2 /* model */,
 				A7286ADE28B66F2900228526 /* OKArrrrApp.swift */,
 				A7286AE028B66F2900228526 /* ContentView.swift */,
 				A7286AE228B66F2B00228526 /* Assets.xcassets */,
 				A7286AE428B66F2B00228526 /* Preview Content */,
+				A76E5D7228B674CE00AF82E2 /* OKRRow.swift */,
+				A76E5D7428B67B1000AF82E2 /* OKRList.swift */,
+				A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */,
+				A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */,
 			);
 			path = OKArrrr;
 			sourceTree = "<group>";
@@ -127,6 +159,37 @@
 			path = OKArrrrUITests;
 			sourceTree = "<group>";
 		};
+		A76E5D6D28B6737B00AF82E2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A76E5D6E28B6739100AF82E2 /* OKR.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ECDBAD97FEBECCBCA912907B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157540E27FEFD888C0201D1C /* Pods_OKArrrr.framework */,
+				9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */,
+				A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7C62A8F0CB83395F7F7B5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91103749CEBE92AE6D93C402 /* Pods-OKArrrr.debug.xcconfig */,
+				7C5362DC236D78A4B220148C /* Pods-OKArrrr.release.xcconfig */,
+				50DE01150AA67AB1F42A8FA7 /* Pods-OKArrrr-OKArrrrUITests.debug.xcconfig */,
+				45A6C0EF62EE3118E5E9D6D1 /* Pods-OKArrrr-OKArrrrUITests.release.xcconfig */,
+				BCC054ABA2190EAB9456142C /* Pods-OKArrrrTests.debug.xcconfig */,
+				E28BF18CB7018D2BB73A1A19 /* Pods-OKArrrrTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7286AFF28B66F2B00228526 /* Build configuration list for PBXNativeTarget "OKArrrr" */;
 			buildPhases = (
+				6D2BF645C339C6B08C33FCE9 /* [CP] Check Pods Manifest.lock */,
 				A7286AD728B66F2900228526 /* Sources */,
 				A7286AD828B66F2900228526 /* Frameworks */,
 				A7286AD928B66F2900228526 /* Resources */,
+				33FA3112F430B1B2CBB52936 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7286B0228B66F2B00228526 /* Build configuration list for PBXNativeTarget "OKArrrrTests" */;
 			buildPhases = (
+				ABDC47F970E9941636C4FD08 /* [CP] Check Pods Manifest.lock */,
 				A7286AE728B66F2B00228526 /* Sources */,
 				A7286AE828B66F2B00228526 /* Frameworks */,
 				A7286AE928B66F2B00228526 /* Resources */,
@@ -169,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7286B0528B66F2B00228526 /* Build configuration list for PBXNativeTarget "OKArrrrUITests" */;
 			buildPhases = (
+				2ECF4EC7B414773BEAC94AED /* [CP] Check Pods Manifest.lock */,
 				A7286AF128B66F2B00228526 /* Sources */,
 				A7286AF228B66F2B00228526 /* Frameworks */,
 				A7286AF328B66F2B00228526 /* Resources */,
+				3089F5046B95E468BC87F5F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,13 +320,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ECF4EC7B414773BEAC94AED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OKArrrr-OKArrrrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3089F5046B95E468BC87F5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OKArrrr-OKArrrrUITests/Pods-OKArrrr-OKArrrrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OKArrrr-OKArrrrUITests/Pods-OKArrrr-OKArrrrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OKArrrr-OKArrrrUITests/Pods-OKArrrr-OKArrrrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33FA3112F430B1B2CBB52936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OKArrrr/Pods-OKArrrr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OKArrrr/Pods-OKArrrr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OKArrrr/Pods-OKArrrr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2BF645C339C6B08C33FCE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OKArrrr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDC47F970E9941636C4FD08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OKArrrrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7286AD728B66F2900228526 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76E5D6F28B6739100AF82E2 /* OKR.swift in Sources */,
+				A76E5D7528B67B1000AF82E2 /* OKRList.swift in Sources */,
 				A7286AE128B66F2900228526 /* ContentView.swift in Sources */,
 				A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */,
+				A76E5D7328B674CE00AF82E2 /* OKRRow.swift in Sources */,
+				A76E5D7928B6818A00AF82E2 /* NavigationConfigurator.swift in Sources */,
+				A76E5D7728B67D6D00AF82E2 /* OKRDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +589,7 @@
 		};
 		A7286B0028B66F2B00228526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91103749CEBE92AE6D93C402 /* Pods-OKArrrr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +603,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +619,7 @@
 		};
 		A7286B0128B66F2B00228526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5362DC236D78A4B220148C /* Pods-OKArrrr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +633,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +649,7 @@
 		};
 		A7286B0328B66F2B00228526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC054ABA2190EAB9456142C /* Pods-OKArrrrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +669,7 @@
 		};
 		A7286B0428B66F2B00228526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28BF18CB7018D2BB73A1A19 /* Pods-OKArrrrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +689,7 @@
 		};
 		A7286B0628B66F2B00228526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DE01150AA67AB1F42A8FA7 /* Pods-OKArrrr-OKArrrrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +707,7 @@
 		};
 		A7286B0728B66F2B00228526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A6C0EF62EE3118E5E9D6D1 /* Pods-OKArrrr-OKArrrrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

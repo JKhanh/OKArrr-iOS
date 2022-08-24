@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        OKRList(
+            okrs: [
+                OKR(name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
+               OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit),
+                OKR(name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
+               OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit),
+                OKR(name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
+               OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
+               OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit)])
     }
 }
 
