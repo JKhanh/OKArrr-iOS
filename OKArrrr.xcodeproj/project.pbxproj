@@ -10,7 +10,6 @@
 		1119ED3636B201F257273A8A /* Pods_OKArrrr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157540E27FEFD888C0201D1C /* Pods_OKArrrr.framework */; };
 		A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286ADE28B66F2900228526 /* OKArrrrApp.swift */; };
 		A7286AE128B66F2900228526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AE028B66F2900228526 /* ContentView.swift */; };
-		A7286AE328B66F2B00228526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7286AE228B66F2B00228526 /* Assets.xcassets */; };
 		A7286AE628B66F2B00228526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7286AE528B66F2B00228526 /* Preview Assets.xcassets */; };
 		A7286AF028B66F2B00228526 /* OKArrrrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AEF28B66F2B00228526 /* OKArrrrTests.swift */; };
 		A7286AFA28B66F2B00228526 /* OKArrrrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AF928B66F2B00228526 /* OKArrrrUITests.swift */; };
@@ -20,6 +19,7 @@
 		A76E5D7528B67B1000AF82E2 /* OKRList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7428B67B1000AF82E2 /* OKRList.swift */; };
 		A76E5D7728B67D6D00AF82E2 /* OKRDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */; };
 		A76E5D7928B6818A00AF82E2 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */; };
+		A76E5D7B28B68CF500AF82E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76E5D7A28B68CF500AF82E2 /* Assets.xcassets */; };
 		C7785D826166153A62044488 /* Pods_OKArrrr_OKArrrrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */; };
 		CCE6F1E419C0173C517B7801 /* Pods_OKArrrrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,6 @@
 		A7286ADB28B66F2900228526 /* OKArrrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKArrrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286ADE28B66F2900228526 /* OKArrrrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrApp.swift; sourceTree = "<group>"; };
 		A7286AE028B66F2900228526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A7286AE228B66F2B00228526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7286AE528B66F2B00228526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7286AEB28B66F2B00228526 /* OKArrrrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OKArrrrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286AEF28B66F2B00228526 /* OKArrrrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrTests.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		A76E5D7428B67B1000AF82E2 /* OKRList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRList.swift; sourceTree = "<group>"; };
 		A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRDetail.swift; sourceTree = "<group>"; };
 		A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		A76E5D7A28B68CF500AF82E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC054ABA2190EAB9456142C /* Pods-OKArrrrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E28BF18CB7018D2BB73A1A19 /* Pods-OKArrrrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.release.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				A76E5D6D28B6737B00AF82E2 /* model */,
 				A7286ADE28B66F2900228526 /* OKArrrrApp.swift */,
 				A7286AE028B66F2900228526 /* ContentView.swift */,
-				A7286AE228B66F2B00228526 /* Assets.xcassets */,
+				A76E5D7A28B68CF500AF82E2 /* Assets.xcassets */,
 				A7286AE428B66F2B00228526 /* Preview Content */,
 				A76E5D7228B674CE00AF82E2 /* OKRRow.swift */,
 				A76E5D7428B67B1000AF82E2 /* OKRList.swift */,
@@ -300,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7286AE628B66F2B00228526 /* Preview Assets.xcassets in Resources */,
-				A7286AE328B66F2B00228526 /* Assets.xcassets in Resources */,
+				A76E5D7B28B68CF500AF82E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

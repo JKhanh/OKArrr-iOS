@@ -34,5 +34,7 @@ struct OKRList_Previews: PreviewProvider {
                        OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
                        OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
                        OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit)])
+        
+    
     }
 }
