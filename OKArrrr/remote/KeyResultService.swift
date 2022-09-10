@@ -6,7 +6,7 @@ struct KeyResultService {
     let baseURL = "something.com"
     let keyResultPath = "/keyresult"
 
-    func addKeyResult(keyResult: KeyResultRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
+    func addKeyResult(keyResult: KeyResultRemote, completion: @escaping (KeyResultRemote) -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)\(keyResultPath)"
 
         let parameters: [String: Any] = [
@@ -18,9 +18,13 @@ struct KeyResultService {
             "dueDate": keyResult.dueDate,
             "startDate": keyResult.startDate
         ]
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseKeyResultRemote { response in
             if response.result.isSuccess {
-                completion()
+                if let keyResult = response.result.value {
+                    completion(keyResult)
+                } else {
+                    error("Add new key result failed")
+                }
             } else {
                 error("Add new key result failed")
             }
