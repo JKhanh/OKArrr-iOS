@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RxSwift
 
 struct OKRList: View {
     var okrs: [OKR]
@@ -15,11 +16,16 @@ struct OKRList: View {
                 Rectangle()
                     .fill(Color.blue)
                     .edgesIgnoringSafeArea(.all)
-                List(okrs) { okr in
-                    NavigationLink {
-                        OKRDetail(okr: okr)
-                    } label: {
-                        OKRRow(okr: okr)
+                List {
+                    ForEach(okrs) {okr in
+                        NavigationLink {
+                            OKRDetail(okr: okr)
+                        } label: {
+                            OKRRow(okr: okr)
+                        }
+                    }
+                    .onDelete { index in
+                        print("Delete item at \(index)")
                     }
                 }
             }
@@ -34,7 +40,5 @@ struct OKRList_Previews: PreviewProvider {
                        OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
                        OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
                        OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit)])
-        
-    
     }
 }

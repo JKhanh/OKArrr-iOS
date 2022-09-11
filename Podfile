@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'OKArrrr' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -16,5 +16,8 @@ target 'OKArrrr' do
     # Pods for testing
   end
   pod 'Alamofire'
-  pod 'RealmSwift'
+  pod 'Realm', '10.20.1'
+  pod 'RealmSwift', '10.20.1'
+  pod 'RxRealm', '4.0.3'
+  pod 'RxCocoa'
 end

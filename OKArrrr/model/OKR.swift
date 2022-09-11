@@ -8,6 +8,7 @@
 import Foundation
 
 class OKR: Codable, Identifiable {
+    var id = 0
     var name: String
     var dueDate: Date
     var reason: String
@@ -20,6 +21,14 @@ class OKR: Codable, Identifiable {
     }
     
     init(name: String, dueDate: Date, reason: String, type: OKRType) {
+        self.name = name
+        self.dueDate = dueDate
+        self.reason = reason
+        self.type = type
+    }
+    
+    init(id: Int,name: String, dueDate: Date, reason: String, type: OKRType) {
+        self.id = id
         self.name = name
         self.dueDate = dueDate
         self.reason = reason

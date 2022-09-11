@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1119ED3636B201F257273A8A /* Pods_OKArrrr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157540E27FEFD888C0201D1C /* Pods_OKArrrr.framework */; };
+		A7241BDC28B9C2C800326683 /* OKRLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7241BDB28B9C2C800326683 /* OKRLocal.swift */; };
+		A7241BDE28B9C53800326683 /* OKRDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7241BDD28B9C53800326683 /* OKRDatabase.swift */; };
+		A7241BE128B9F6E500326683 /* OKRRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7241BE028B9F6E500326683 /* OKRRepository.swift */; };
+		A7241BE328B9F89200326683 /* OKRRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7241BE228B9F89200326683 /* OKRRepositoryImpl.swift */; };
+		A7241BE528BA0A2E00326683 /* OKRListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7241BE428BA0A2E00326683 /* OKRListViewModel.swift */; };
 		A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286ADE28B66F2900228526 /* OKArrrrApp.swift */; };
 		A7286AE128B66F2900228526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7286AE028B66F2900228526 /* ContentView.swift */; };
 		A7286AE628B66F2B00228526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7286AE528B66F2B00228526 /* Preview Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		7C5362DC236D78A4B220148C /* Pods-OKArrrr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr.release.xcconfig"; path = "Target Support Files/Pods-OKArrrr/Pods-OKArrrr.release.xcconfig"; sourceTree = "<group>"; };
 		91103749CEBE92AE6D93C402 /* Pods-OKArrrr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrr.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrr/Pods-OKArrrr.debug.xcconfig"; sourceTree = "<group>"; };
 		9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrr_OKArrrrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7241BDB28B9C2C800326683 /* OKRLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRLocal.swift; sourceTree = "<group>"; };
+		A7241BDD28B9C53800326683 /* OKRDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRDatabase.swift; sourceTree = "<group>"; };
+		A7241BE028B9F6E500326683 /* OKRRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRRepository.swift; sourceTree = "<group>"; };
+		A7241BE228B9F89200326683 /* OKRRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRRepositoryImpl.swift; sourceTree = "<group>"; };
+		A7241BE428BA0A2E00326683 /* OKRListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKRListViewModel.swift; sourceTree = "<group>"; };
 		A7286ADB28B66F2900228526 /* OKArrrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKArrrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7286ADE28B66F2900228526 /* OKArrrrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKArrrrApp.swift; sourceTree = "<group>"; };
 		A7286AE028B66F2900228526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +106,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7241BD728B9C28700326683 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A7241BDA28B9C2A800326683 /* repository */,
+				A7241BD928B9C29F00326683 /* local */,
+				A7241BD828B9C29100326683 /* network */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A7241BD828B9C29100326683 /* network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A7241BD928B9C29F00326683 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				A7241BDB28B9C2C800326683 /* OKRLocal.swift */,
+				A7241BDD28B9C53800326683 /* OKRDatabase.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		A7241BDA28B9C2A800326683 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				A7241BE228B9F89200326683 /* OKRRepositoryImpl.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		A7241BDF28B9F6CB00326683 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				A7241BE028B9F6E500326683 /* OKRRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
 		A7286AD228B66F2900228526 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +173,7 @@
 		A7286ADD28B66F2900228526 /* OKArrrr */ = {
 			isa = PBXGroup;
 			children = (
+				A7241BD728B9C28700326683 /* data */,
 				A76E5D6D28B6737B00AF82E2 /* model */,
 				A7286ADE28B66F2900228526 /* OKArrrrApp.swift */,
 				A7286AE028B66F2900228526 /* ContentView.swift */,
@@ -130,6 +183,7 @@
 				A76E5D7428B67B1000AF82E2 /* OKRList.swift */,
 				A76E5D7628B67D6D00AF82E2 /* OKRDetail.swift */,
 				A76E5D7828B6818A00AF82E2 /* NavigationConfigurator.swift */,
+				A7241BE428BA0A2E00326683 /* OKRListViewModel.swift */,
 			);
 			path = OKArrrr;
 			sourceTree = "<group>";
@@ -162,6 +216,7 @@
 		A76E5D6D28B6737B00AF82E2 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A7241BDF28B9F6CB00326683 /* repository */,
 				A76E5D6E28B6739100AF82E2 /* OKR.swift */,
 			);
 			path = model;
@@ -428,12 +483,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7241BDC28B9C2C800326683 /* OKRLocal.swift in Sources */,
+				A7241BE328B9F89200326683 /* OKRRepositoryImpl.swift in Sources */,
 				A76E5D6F28B6739100AF82E2 /* OKR.swift in Sources */,
 				A76E5D7528B67B1000AF82E2 /* OKRList.swift in Sources */,
 				A7286AE128B66F2900228526 /* ContentView.swift in Sources */,
+				A7241BE528BA0A2E00326683 /* OKRListViewModel.swift in Sources */,
 				A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */,
 				A76E5D7328B674CE00AF82E2 /* OKRRow.swift in Sources */,
 				A76E5D7928B6818A00AF82E2 /* NavigationConfigurator.swift in Sources */,
+				A7241BDE28B9C53800326683 /* OKRDatabase.swift in Sources */,
+				A7241BE128B9F6E500326683 /* OKRRepository.swift in Sources */,
 				A76E5D7728B67D6D00AF82E2 /* OKRDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct OKRRow: View {
     var okr: OKR
-    let dateFormatter = DateFormatter()
     
     var body: some View {
         VStack(alignment: .leading) {
             Text(okr.name)
+                .bold()
+                .font(.system(size:25))
             Text(okr.reason)
             HStack {
                 Text(okr.dueDateString)
