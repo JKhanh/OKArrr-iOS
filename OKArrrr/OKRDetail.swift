@@ -8,15 +8,55 @@
 import SwiftUI
 
 struct OKRDetail: View {
-    var okr: OKR
+    @State private var okr: OKR
+    @State private var isPresentingEditView = false
+    @State private var DialogPresentation = DialogPresentation()
+
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(okr.name)
-            Text(okr.reason)
-            Text(okr.dueDateString)
-            Text(okr.type.rawValue)
+        Form {
+            Section(header: Text("Objective")) {
+                TextField("Title", $okr.objective)
+                Text(okr.description)
+                Spacer()
+                DatePicker(selection: $okr.startDate, displayedComponents: .date) {
+                    Text("Start Date")
+                }
+                DatePicker(selection: $okr.endDate, displayedComponents: .date) {
+                    Text("End Date")
+                }
+                Spacer()
+                HStack {
+                    Slider("Progress", value: $okr.progress, in: 0...100, step: 1)
+                    Spacer()
+                    Text("\(okr.progress)%")
+                }
+                TextField("Mentor", $okr.mentor)
+
+            }
+            Section(header: Text("Key Results")) {
+                ForEach(okr.keyResults, id: \.self) { keyResult in
+                    GeometryReader { geometry in
+                        Text(keyResult)
+                    }
+                    .onTapGesture {
+                        DialogPresentation.show(.keyResultDetail(
+                            isPresented: $DialogPresentation.isPresented,
+                            keyResult: keyResult
+                        ))
+                    }
+                }
+                .onDelete{ indices in 
+                    //TODO: Delete key result
+                }
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        //TODO: Add key result
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                    }
+            }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
