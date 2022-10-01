@@ -11,10 +11,16 @@ import RxRealm
 
 struct OKRRepositoryImpl: OKRRepository {
     let database = OKRDatabase()
+    let okrService = OKRService.instance
 
     func addOKR(okr: OKR, didAdd: @escaping () -> Void) {
-        let okrLocal = OKRLocal.mapToLocal(okr: okr)
-        database.addOKR(okr: okrLocal, didAdd: didAdd)
+        let okrRemote = OkrRemote(okr: okr)
+        okrService.postOKR(okr: okrRemote, completion: {
+            let okrLocal = OKRLocal.mapToLocal(okr: okrRemote)
+            database.addOKR(okr: okrLocal, didAdd: didAdd)
+        }, error: { error in
+            print(error)
+        })
     }
     	
     func updateOKR(okr: OKR, didUpdate: @escaping () -> Void) {
@@ -28,6 +34,17 @@ struct OKRRepositoryImpl: OKRRepository {
     }
     
     func getOKRist() -> Observable<[OKR]> {
+        okrService.getOKRList { okrList in
+            let okrLocalList = okrList.okrs.map { okrRemote in
+                OKRLocal.mapToLocal(okr: okrRemote)
+            }
+            okrLocalList.forEach { okrLocal in
+                database.addOKR(okr: okrLocal, didAdd: {})
+            }
+        } error: { error in
+            print(error)
+        }
+
         return Observable.collection(from: database.getOKRList())
             .map { okrLocals in
                 Array(okrLocals).map { $0.mapToDomain() }

@@ -38,7 +38,7 @@ extension DataRequest {
     }
 
     @discardableResult
-    func responseOKRRemote(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<OKRRemote>) -> Void) -> Self {
+    func responseOKRRemote(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<OKRResponse>) -> Void) -> Self {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
 

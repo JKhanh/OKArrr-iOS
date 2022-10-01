@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OKRDetail: View {
+struct OKRDetail: View { 
     var okr: OKR
     var body: some View {
         VStack(alignment: .leading) {

@@ -1,12 +1,12 @@
-import Foudation
-import Alamorfire
+import Foundation
+import Alamofire
 
 struct OKRService {
     static let instance = OKRService()
     let baseURL = "something.com"
     let objectivePath = "/objective"
     
-    func postOKR(okr: OKRRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
+    func postOKR(okr: OkrRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)\(objectivePath)"
         
         let parameters: [String: Any] = [
@@ -28,7 +28,7 @@ struct OKRService {
         }
     }   
 
-    func updateOKR(okr: OKRRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
+    func updateOKR(okr: OkrRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)\(objectivePath)/\(okr.objectiveID)"
         
         let parameters: [String: Any] = [
@@ -50,7 +50,7 @@ struct OKRService {
         }
     }
 
-    func deleteOKR(okr: OKRRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
+    func deleteOKR(okr: OkrRemote, completion: @escaping () -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)\(objectivePath)/\(okr.objectiveID)"
         
         Alamofire.request(url, method: .delete).responseJSON { (response) in
@@ -62,13 +62,14 @@ struct OKRService {
         }
     }
 
-    func getOKRList() -> Result<[OKR]> {
+    func getOKRList(completion: @escaping (OKRResponse) -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)\(objectivePath)"
         Alamofire.request(url).responseOKRRemote { (response) in
-            guard let oKRResponse = response.result.value else {
-                return Result.failure(OKRError.invalidResponse)
+            guard let okrResponse = response.result.value else {
+                error("Get Okr error")
+                return
             }
-            return Result.success(oKRResponse.okrs)
+            completion(okrResponse)
         }
     }
 }

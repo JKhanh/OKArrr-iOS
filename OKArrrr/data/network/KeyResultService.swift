@@ -65,13 +65,14 @@ struct KeyResultService {
         }
     }
     
-    func getKeyResultList(_ okr: OKR) -> Result<[KeyResult]> {
+    func getKeyResultList(_ okr: OKR, completion: @escaping (KeyResultRemote) -> Void, error: @escaping (String) -> Void) {
         let url = "\(baseURL)/\(okr.id)/keyresults"
         Alamofire.request(url).responseKeyResultRemote { (response) in
             guard let keyResultResponse = response.result.value else {
-                return Result.failure(OKRError.invalidResponse)
+                error("Get KR failed")
+                return
             }
-            return Result.success(keyResultResponse.keyResults)
+            completion(keyResultResponse)
         }
     }
 }

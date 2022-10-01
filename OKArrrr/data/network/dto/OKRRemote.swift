@@ -39,4 +39,15 @@ struct OkrRemote: Codable {
         case objectiveID = "objectiveId"
         case title, reason, mentor, type, progress, dueDate, startDate
     }
+
+    init(okr: OKR) {
+        self.objectiveID = okr.id
+        self.title = "okr.title"
+        self.reason = "okr.reason"
+        self.mentor = "okr.mentor"
+        self.type = okr.type.rawValue
+        self.progress = 0
+        self.dueDate = "okr.dueDate"
+        self.startDate = "okr.startDate"
+    }
 }

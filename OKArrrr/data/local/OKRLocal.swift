@@ -34,6 +34,10 @@ class OKRLocal: Object, ObjectKeyIdentifiable {
     static func mapToLocal(okr: OKR) -> OKRLocal {
         return OKRLocal(okr.name, okr.dueDate, okr.reason, okr.type)
     }
+
+    static func mapToLocal(okr: OkrRemote) -> OKRLocal {
+        return OKRLocal(okr.title, DateFormatter().date(from: okr.dueDate)!, okr.reason, OKR.OKRType(rawValue: okr.type) ?? .commit)
+    }
     
     func mapToDomain() -> OKR {
         return OKR(id: _id.hashValue,
