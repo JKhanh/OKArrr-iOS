@@ -1,28 +1,27 @@
 import SwiftUI
 
 struct KeyResultDetailView: View {
-    @State private var keyResult: KeyResult
-    @State private var isPresentingEditView = false
+    @State var keyResult: KeyResult
+    @State var isPresentingEditView = false
 
     var body: some View {
         Form {
             Section(header: Text("Key Result")) {
-                TextField("Title", $keyResult.title)
-                Text(keyResult.description)
+                TextField("Title", text: $keyResult.title)
                 Spacer()
                 DatePicker(selection: $keyResult.startDate, displayedComponents: .date) {
                     Text("Start Date")
                 }
-                DatePicker(selection: $keyResult.endDate, displayedComponents: .date) {
+                DatePicker(selection: $keyResult.dueDate, displayedComponents: .date) {
                     Text("End Date")
                 }
                 Spacer()
                 HStack {
-                    Slider("Progress", value: $keyResult.progress, in: 0...100, step: 1)
+                    Slider(value: $keyResult.progress, in: 0...100)
                     Spacer()
                     Text("\(keyResult.progress)%")
                 }
-                TextField("Mentor", $keyResult.mentor)
+                TextField("Mentor", text: $keyResult.mentor)
 
             }
         }

@@ -9,30 +9,35 @@ import Foundation
 
 class OKR: Codable, Identifiable {
     var id = 0
-    var name: String
-    var dueDate: Date
-    var reason: String
+    var objective, reason, mentor: String
+    var dueDate, startDate: Date
     var type: OKRType
+    var progress: Float = 0
     var dueDateString: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         
         return dateFormatter.string(from: dueDate)
     }
+    var keyResults = [KeyResultRemote]()
     
-    init(name: String, dueDate: Date, reason: String, type: OKRType) {
-        self.name = name
+    init(name: String, startDate: Date, dueDate: Date, reason: String, type: OKRType, mentor: String) {
+        self.objective = name
+        self.startDate = startDate
         self.dueDate = dueDate
         self.reason = reason
         self.type = type
+        self.mentor = mentor
     }
     
-    init(id: Int,name: String, dueDate: Date, reason: String, type: OKRType) {
+    init(id: Int,name: String, startDate: Date, dueDate: Date, reason: String, type: OKRType, mentor: String) {
         self.id = id
-        self.name = name
+        self.objective = name
+        self.startDate = startDate
         self.dueDate = dueDate
         self.reason = reason
         self.type = type
+        self.mentor = mentor
     }
 }
 

@@ -1,3 +1,4 @@
+import SwiftUI
 
 struct CustomDialog: ViewModifier {
     @ObservedObject var presentationManager: DialogPresentation

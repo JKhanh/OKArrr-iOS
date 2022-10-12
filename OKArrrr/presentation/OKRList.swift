@@ -36,9 +36,9 @@ struct OKRList: View {
 
 struct OKRList_Previews: PreviewProvider {
     static var previews: some View {
-        OKRList(okrs: [OKR(name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
-                       OKR(name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
-                       OKR(name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
-                       OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit)])
+        OKRList(okrs: [OKR(name: "OKR 1", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                       OKR(name: "OKR 3", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                       OKR(name: "OKR 4", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                       OKR(name: "OKR 2", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai")])
     }
 }

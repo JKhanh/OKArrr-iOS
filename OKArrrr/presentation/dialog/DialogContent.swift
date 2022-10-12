@@ -7,7 +7,7 @@ enum DialogContent: View {
         switch self {
         case .keyResultDialog(let isPresented, let keyResult):
             return AnyView(
-                KeyResultDetailView(isPresented: isPresented, keyResult: keyResult)
+                KeyResultDetailView(keyResult: keyResult, isPresentingEditView: isPresented.wrappedValue)
             )
         }
     }

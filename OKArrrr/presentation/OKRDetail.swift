@@ -10,44 +10,44 @@ import SwiftUI
 struct OKRDetail: View {
     @State var okr: OKR
     @State private var isPresentingEditView = false
-    @State private var DialogPresentation = DialogPresentation()
+    @State private var dialogPresentation = DialogPresentation()
 
     var body: some View {
         Form {
             Section(header: Text("Objective")) {
-                TextField("Title", $okr.objective)
-                Text(okr.description)
-                Spacer()
+                TextField("Title", text: $okr.objective)
                 DatePicker(selection: $okr.startDate, displayedComponents: .date) {
                     Text("Start Date")
                 }
-                DatePicker(selection: $okr.endDate, displayedComponents: .date) {
+                DatePicker(selection: $okr.dueDate, displayedComponents: .date) {
                     Text("End Date")
                 }
                 Spacer()
                 HStack {
-                    Slider("Progress", value: $okr.progress, in: 0...100, step: 1)
+                    Slider(value: $okr.progress, in: 0...100) { editting in
+                        
+                    }
                     Spacer()
-                    Text("\(okr.progress)%")
+                    Text(String(format: "%.0f", okr.progress) + "%")
                 }
-                TextField("Mentor", $okr.mentor)
+                TextField("Mentor", text: $okr.mentor)
 
             }
             Section(header: Text("Key Results")) {
-                ForEach(okr.keyResults, id: \.self) { keyResult in
-                    GeometryReader { geometry in
-                        Text(keyResult)
-                    }
-                    .onTapGesture {
-                        DialogPresentation.show(.keyResultDetail(
-                            isPresented: $DialogPresentation.isPresented,
-                            keyResult: keyResult
-                        ))
-                    }
-                }
-                .onDelete{ indices in 
-                    //TODO: Delete key result
-                }
+//                ForEach(okr.keyResults, id: \.self) { keyResult in
+//                    GeometryReader { geometry in
+//                        Text(keyResult.title)
+//                    }
+//                    .onTapGesture {
+//                        DialogPresentation.show(.keyResultDetail(
+//                            isPresented: $dialogPresentation.isPresented,
+//                            keyResult: keyResult
+//                        ))
+//                    }
+//                }
+//                .onDelete{ indices in
+//                    //TODO: Delete key result
+//                }
                 HStack {
                     Spacer()
                     Button(action: {
@@ -63,6 +63,6 @@ struct OKRDetail: View {
 
 struct OKRDetail_Previews: PreviewProvider {
     static var previews: some View {
-        OKRDetail(okr: OKR(name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit))
+        OKRDetail(okr: OKR(name: "OKR 2", startDate: Date(), dueDate: Date(), reason: "no reason", type: .commit, mentor: "abcdef"))
     }
 }

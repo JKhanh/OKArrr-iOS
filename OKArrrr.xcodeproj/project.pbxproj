@@ -31,6 +31,11 @@
 		A74D20E428D6C30D00AAB2BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74D20DE28D6C30D00AAB2BE /* ContentView.swift */; };
 		A76E5D6F28B6739100AF82E2 /* OKR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E5D6E28B6739100AF82E2 /* OKR.swift */; };
 		A76E5D7B28B68CF500AF82E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76E5D7A28B68CF500AF82E2 /* Assets.xcassets */; };
+		A7948F4628F679F600543ABE /* KeyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7948F4528F679F600543ABE /* KeyResult.swift */; };
+		A7E31C1128E82D8B005BF121 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E31C1028E82D8B005BF121 /* CustomDialog.swift */; };
+		A7E31C1528E82D9E005BF121 /* KeyResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E31C1228E82D9E005BF121 /* KeyResultDetailView.swift */; };
+		A7E31C1628E82D9E005BF121 /* DialogContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E31C1328E82D9E005BF121 /* DialogContent.swift */; };
+		A7E31C1728E82D9E005BF121 /* DialogPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E31C1428E82D9E005BF121 /* DialogPresentation.swift */; };
 		C7785D826166153A62044488 /* Pods_OKArrrr_OKArrrrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB27CBFD67F3B6774705A46 /* Pods_OKArrrr_OKArrrrUITests.framework */; };
 		CCE6F1E419C0173C517B7801 /* Pods_OKArrrrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +90,11 @@
 		A74D20DE28D6C30D00AAB2BE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A76E5D6E28B6739100AF82E2 /* OKR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKR.swift; sourceTree = "<group>"; };
 		A76E5D7A28B68CF500AF82E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		A7948F4528F679F600543ABE /* KeyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyResult.swift; sourceTree = "<group>"; };
+		A7E31C1028E82D8B005BF121 /* CustomDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomDialog.swift; path = OKArrrr/presentation/dialog/CustomDialog.swift; sourceTree = SOURCE_ROOT; };
+		A7E31C1228E82D9E005BF121 /* KeyResultDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyResultDetailView.swift; path = OKArrrr/KeyResultDetailView.swift; sourceTree = SOURCE_ROOT; };
+		A7E31C1328E82D9E005BF121 /* DialogContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DialogContent.swift; path = OKArrrr/presentation/dialog/DialogContent.swift; sourceTree = SOURCE_ROOT; };
+		A7E31C1428E82D9E005BF121 /* DialogPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DialogPresentation.swift; path = OKArrrr/presentation/dialog/DialogPresentation.swift; sourceTree = SOURCE_ROOT; };
 		A869D61C5468FB19D3B6B224 /* Pods_OKArrrrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKArrrrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC054ABA2190EAB9456142C /* Pods-OKArrrrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.debug.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E28BF18CB7018D2BB73A1A19 /* Pods-OKArrrrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKArrrrTests.release.xcconfig"; path = "Target Support Files/Pods-OKArrrrTests/Pods-OKArrrrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +246,8 @@
 		A74D20D828D6C1F700AAB2BE /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A7E31C1828E82E0A005BF121 /* dialog */,
+				A7E31C1228E82D9E005BF121 /* KeyResultDetailView.swift */,
 				A74D20DE28D6C30D00AAB2BE /* ContentView.swift */,
 				A74D20DA28D6C30D00AAB2BE /* NavigationConfigurator.swift */,
 				A74D20DB28D6C30D00AAB2BE /* OKRDetail.swift */,
@@ -252,8 +264,19 @@
 			children = (
 				A7241BDF28B9F6CB00326683 /* repository */,
 				A76E5D6E28B6739100AF82E2 /* OKR.swift */,
+				A7948F4528F679F600543ABE /* KeyResult.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		A7E31C1828E82E0A005BF121 /* dialog */ = {
+			isa = PBXGroup;
+			children = (
+				A7E31C1328E82D9E005BF121 /* DialogContent.swift */,
+				A7E31C1028E82D8B005BF121 /* CustomDialog.swift */,
+				A7E31C1428E82D9E005BF121 /* DialogPresentation.swift */,
+			);
+			path = dialog;
 			sourceTree = "<group>";
 		};
 		ECDBAD97FEBECCBCA912907B /* Frameworks */ = {
@@ -523,18 +546,23 @@
 				A7071D9228CD88170097709E /* OKRRemote.swift in Sources */,
 				A7241BE328B9F89200326683 /* OKRRepositoryImpl.swift in Sources */,
 				A76E5D6F28B6739100AF82E2 /* OKR.swift in Sources */,
+				A7948F4628F679F600543ABE /* KeyResult.swift in Sources */,
 				A7071D9328CD88170097709E /* ServiceUtils.swift in Sources */,
 				A74D20E328D6C30D00AAB2BE /* OKRListViewModel.swift in Sources */,
 				A7071D9128CD88170097709E /* KeyResultRemote.swift in Sources */,
 				A7286ADF28B66F2900228526 /* OKArrrrApp.swift in Sources */,
 				A7071D8F28CD88170097709E /* OKRService.swift in Sources */,
+				A7E31C1728E82D9E005BF121 /* DialogPresentation.swift in Sources */,
 				A74D20E228D6C30D00AAB2BE /* OKRRow.swift in Sources */,
 				A7397CB128DEA943005517CB /* LoginView.swift in Sources */,
 				A7241BDE28B9C53800326683 /* OKRDatabase.swift in Sources */,
+				A7E31C1628E82D9E005BF121 /* DialogContent.swift in Sources */,
+				A7E31C1528E82D9E005BF121 /* KeyResultDetailView.swift in Sources */,
 				A74D20E428D6C30D00AAB2BE /* ContentView.swift in Sources */,
 				A74D20E028D6C30D00AAB2BE /* NavigationConfigurator.swift in Sources */,
 				A7241BE128B9F6E500326683 /* OKRRepository.swift in Sources */,
 				A74D20E128D6C30D00AAB2BE /* OKRDetail.swift in Sources */,
+				A7E31C1128E82D8B005BF121 /* CustomDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

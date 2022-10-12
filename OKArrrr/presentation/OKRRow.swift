@@ -12,7 +12,7 @@ struct OKRRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(okr.name)
+            Text(okr.objective)
                 .bold()
                 .font(.system(size:25))
             Text(okr.reason)
@@ -30,7 +30,7 @@ struct OKRRow: View {
 
 struct OKRRow_Previews: PreviewProvider {
     static var previews: some View {
-        OKRRow(okr: OKR(name: "OKR 1", dueDate: Date(), reason: "no reason", type: .commit))
+        OKRRow(okr: OKR(name: "OKR 1", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"))
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }

@@ -11,18 +11,18 @@ struct ContentView: View {
     var body: some View {
         OKRList(
             okrs: [
-                OKR(id: 1, name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
-                OKR(id: 2, name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 3, name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 4, name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 5, name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
-                OKR(id: 6, name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 7, name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 8, name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 9, name: "OKR 1", dueDate: Date(), reason: "no reason", type: .insprite),
-                OKR(id: 10, name: "OKR 3", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 11, name: "OKR 4", dueDate: Date(), reason: "no reason", type: .commit),
-                OKR(id: 12, name: "OKR 2", dueDate: Date(), reason: "no reason", type: .commit)])
+                OKR(id: 1, name: "OKR 1", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 2, name: "OKR 3", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 3, name: "OKR 4", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 4, name: "OKR 2", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 5, name: "OKR 1", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 6, name: "OKR 3", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 7, name: "OKR 4", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 8, name: "OKR 2", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 9, name: "OKR 1", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 10, name: "OKR 3", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 11, name: "OKR 4", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai"),
+                OKR(id: 12, name: "OKR 2", startDate: Date(), dueDate: Date(), reason: "no reason", type: .insprite, mentor: "Eo can ai")])
     }
 }
 
